@@ -33,10 +33,11 @@ $(document).ready(function() {
 
     $( '#searchby').on( 'keyup change', function () {
         var col = $('#selectby').val().trim();
+        var searchText = $('#searchby').val().trim();
         if (searchText ){
             table
-            .columns()
-            .search( col)
+            .columns(col)
+            .search( searchText)
             .draw();
         }
     } );
