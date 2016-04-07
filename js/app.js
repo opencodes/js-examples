@@ -16,11 +16,10 @@ $(document).ready(function() {
                 // this case `data: 0`.
                 "render": function ( data, type, row ) {
                 	console.log(row)
-                    return data +' ('+ row[1]+')';
+                    return '<a href="'+row.extn+'" >'+ data +'</a>';
                 },
-                "targets": 1
-            },
-            { "visible": false,  "targets": [ 3 ] }
+                "targets": 0
+            }
         ]
     } );
 } );
