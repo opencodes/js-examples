@@ -34,6 +34,7 @@ $(document).ready(function() {
     $( '#searchby').on( 'keyup change', function () {
         var col = $('#selectby').val().trim();
         var searchText = $('#searchby').val().trim();
+        console.log(searchText, col)
         if (searchText ){
             table
             .columns(col)
