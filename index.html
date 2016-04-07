@@ -1,137 +1,104 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>Dashboard Template for Bootstrap</title>
 
-    <title>Jquery UI</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet"/>
+
+     <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <h1>Jquery UI</h1>
-        <h2>Jquery UI session</h2>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">JS Example</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
       </div>
-    </header>
+    </nav>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-        <h2>Background</h2>
-        <p>A front-end web development framework is simply a collection of production ready HTML/CSS/JavaScript components that we can use in our designs. There are many frameworks out there but some of them stand out from the crowd. For your facilitation below you will find outlined some of the most powerful and popular frameworks available today. Bear in mind that these are not just CSS grids or so, but instead full-featured front-end development frameworks.</p>
-         <ul>
-    <li>
-    <strong>Bootstrap</strong>
-    <p>jQuery UI is a set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.</p>
-</li>
-<li><strong>Jquery UI</strong>
-    <p>Bootstrap is the undisputed leader among the available frameworks today. Given its huge popularity, which is still growing every day, you can be sure that this wonderful toolkit won’t fail you, or leave you alone on your way to building successful websites.</p>
-</li>
-<li><strong>Foundation by ZURB</strong>
-    <p>Foundation is the second big player in this comparison. With a solid company like ZURB backing it, this framework has a truly strong … well… foundation. After all, Foundation is used on many big websites including Facebook, Mozilla, Ebay, Yahoo!, and National Geographic, to name a few.</p>
-</li>
-<li><strong>Semantic UI</strong>
-    <p>Semantic UI is an ongoing effort to make building websites much more semantic. It utilizes natural language principles, thus making the code much more </p>
-</li>readable and understandable.
-<li><strong>Pure by Yahoo!</strong>
-    <p>Pure is a lightweight, modular framework – written in pure CSS – that includes components that can be used together or separately depending on your needs.</p>
-</li>
-<li> <strong>UIkit by YOOtheme</strong>
-    <p>UIkit is a concise collection of easy to use and easy to customize components. Although it’s not as popular as its competitors, it offers the same functionality and quality.</p>
-</li>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Datatable</a></li>
+          </ul>
+          
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
-</ul>
-          <h2>Introduction</h2>
-jQuery UI is a set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.
-<h2>Features</h2>
-JqueryUI is categorized into four groups:
-<ul>
-	<li><strong>Interactions
-</strong>These are the interactive plugins like drag, drop, resize and more which give the user the ability to interact with DOM elements.</li>
-	<li><strong>Widgets
-</strong>Using widgets which are jQuery plugins, you can create user interface elements like accordian,datepicker etc.</li>
-	<li><strong>Effects
-</strong>These are built on the internal jQuery effects. They contain a full suite of custom animations and transitions for DOM elements.</li>
-	<li><strong>Utilities</strong>
-These are a set of modular tools the JqueryUI library uses internally.</li>
-</ul>
-<h2>Advantage</h2>
-<ul>
-	<li>A rich set of component for enhanced web app</li>
-	<li>Cross Browser Support</li>
-	<li>Open Source and Free to Use</li>
-	<li>Good Documentation.</li>
-	<li>Powerful Theming Mechanism.</li>
-	<li>Stable and Maintenance Friendly (Easy to customize)</li>
-</ul>
-<h2>Implementation</h2>
-<h3>Download</h3>
-- Choose Which Components You Need
-- Select a theme or you can make Your Own Custom Theme.
-- Choose a Version of jQuery UI
-<h3>Plugin</h3>
-<pre class="EnlighterJSRAW" data-enlighter-language="null">&lt;link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"&gt;
-&lt;script src="http://code.jquery.com/jquery-1.10.2.js"&gt;&lt;/script&gt;
-&lt;script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"&gt;&lt;/script&gt;</pre>
-<ul>
-	<li>The first line, adds jQuery UI theme (in our case ui-lightness) via CSS. This CSS will make our UI stylish.</li>
-	<li>Second line, adds the jQuery library, as jQuery UI is built on top of jQuery library.</li>
-	<li>Third line, adds the jQuery UI library. This enables jQuery UI in your page.</li>
-</ul>
-<h3>Example</h3>
-&nbsp;
-<pre class="EnlighterJSRAW" data-enlighter-language="js">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-   &lt;link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"&gt;
-   &lt;script src="http://code.jquery.com/jquery-1.10.2.js"&gt;&lt;/script&gt;
-   &lt;script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"&gt;&lt;/script&gt;
-   &lt;script type="text/javascript"&gt;
-      $(function () {
-         $('#dialogMsg').dialog();
-      });
-   &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-   &lt;form id="form1" runat="server"&gt;
-      &lt;div id="dialogMsg" title="First JqueryUI Example"&gt;
-         Hello this is my first JqueryUI example.
-      &lt;/div&gt;
-   &lt;/form&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
-&nbsp;
+          
 
-<iframe src="//jsfiddle.net/rkjha_it_in/12a61n5L/2/embedded/" width="100%" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-           </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/opencodes/js-examples/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/opencodes/js-examples/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/opencodes/js-examples"></a> is maintained by <a href="https://github.com/opencodes">opencodes</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
+          <h2 class="sub-header">Data Table</h2>
+          <div class="table-responsive">
+            <table id="example" class="table" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+    </table>
+          </div>
+        </div>
       </div>
     </div>
 
-  
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
   </body>
 </html>
