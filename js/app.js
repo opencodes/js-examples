@@ -33,7 +33,7 @@ $(document).ready(function() {
 
     $( '#searchby').on( 'keyup change', function () {
         var searchText = $('#selectby').val().trim();
-        if (searchText {
+        if (searchText ){
             table
             .columns()
             .search( searchText)
