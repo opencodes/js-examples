@@ -15,8 +15,7 @@ $(document).ready(function() {
                 // `data` option, which defaults to the column being worked with, in
                 // this case `data: 0`.
                 "render": function ( data, type, row ) {
-                	console.log(row)
-                    return '<a href="'+row.extn+'" >'+ data +'</a>';
+                    return '<a href="index.html/id/'+row.extn+'" >'+ data +'</a>';
                 },
                 "targets": 0
             }
