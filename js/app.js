@@ -7,7 +7,9 @@ $(document).ready(function() {
             { "data": "office" },
             { "data": "extn" },
             { "data": "start_date" },
-            { "data": "salary" }
+            { "data": "salary" },
+            { "data": "extn" }
+            
         ],
         "columnDefs": [
             {
@@ -18,6 +20,13 @@ $(document).ready(function() {
                     return '<a href="index.html/id/'+row.extn+'" >'+ data +'</a>';
                 },
                 "targets": 0
+            },
+            {
+               
+                "render": function ( data, type, row ) {
+                    return '<button data-id="'+row.extn+'"  >Suspend</button>';
+                },
+                "targets": 6
             }
         ]
     } );
