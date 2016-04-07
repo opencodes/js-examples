@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#example').DataTable( {
+    var table = $('#example').DataTable( {
         "ajax": "js/objects.txt",
         "columns": [
             { "data": "name" },
@@ -30,4 +30,14 @@ $(document).ready(function() {
             }
         ]
     } );
-} );
+
+    $( '#searchby').on( 'keyup change', function () {
+        var searchText = $('#selectby').val().trim();
+        if (searchText {
+            table
+            .columns()
+            .search( searchText)
+            .draw();
+        }
+    } );
+});
