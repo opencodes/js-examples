@@ -37,7 +37,7 @@ $(document).ready(function() {
         console.log(searchText, col)
         if (searchText ){
             table
-            .columns(col)
+            .column(col)
             .search( searchText)
             .draw();
         }
