@@ -32,11 +32,11 @@ $(document).ready(function() {
     } );
 
     $( '#searchby').on( 'keyup change', function () {
-        var searchText = $('#selectby').val().trim();
+        var col = $('#selectby').val().trim();
         if (searchText ){
             table
             .columns()
-            .search( searchText)
+            .search( col)
             .draw();
         }
     } );
