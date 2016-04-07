@@ -11,6 +11,7 @@ $(document).ready(function() {
             { "data": "extn" }
             
         ],
+        bFilter : false,
         "columnDefs": [
             {
                 // The `data` parameter refers to the data for the cell (defined by the
