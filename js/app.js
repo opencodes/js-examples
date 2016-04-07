@@ -24,7 +24,7 @@ $(document).ready(function() {
             {
                
                 "render": function ( data, type, row ) {
-                    return '<button data-id="'+row.extn+'"  >Suspend</button>';
+                    return '<button type="button" >Suspend</button>';
                 },
                 "targets": 6
             }
