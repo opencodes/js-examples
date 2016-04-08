@@ -64,6 +64,40 @@ npm install grunt --save-dev
 ```
 The same can be done for gruntplugins and other node modules. As seen in the following example installing the JSHint task module:
 ```
-npm install grunt-contrib-jshint --save-dev
+ grunt-contrib-uglify --save-dev
+```
+###### The Gruntfile
+The Gruntfile.js or Gruntfile.coffee file is a valid JavaScript or CoffeeScript file that belongs in the root directory of your project, next to the package.json file, and should be committed with your project source.
+
+A Gruntfile is comprised of the following parts:
+- The "wrapper" function
+- Project and task configuration
+- Loading Grunt plugins and tasks
+- Custom tasks
+
+```
+module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+    uglify: {
+      options: {
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+      },
+      build: {
+        src: 'src/<%= pkg.name %>.js',
+        dest: 'build/<%= pkg.name %>.min.js'
+      }
+    }
+  });
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Default task(s).
+  grunt.registerTask('default', ['uglify']);
+
+};
 ```
 http://gruntjs.com/getting-started
