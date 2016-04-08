@@ -48,7 +48,7 @@ Note that installing grunt-cli does not install the Grunt task runner!
 A typical setup will involve adding two files to your project: package.json and the Gruntfile.
 The package.json file we already created before.
 
-***Gruntfile:*** This file is named Gruntfile.js or Gruntfile.coffee and is used to configure or define tasks and load Grunt plugins. 
+****Gruntfile:**** This file is named Gruntfile.js or Gruntfile.coffee and is used to configure or define tasks and load Grunt plugins. 
 
 ###### Installing Grunt and gruntplugins
 
@@ -58,5 +58,12 @@ npm install <module> --save-dev.
 ```
 Not only will this install <module> locally, but it will automatically be added to the devDependencies section, using a tilde version range.
 
-
+For example, this will install the latest version of Grunt in your project folder, adding it to your devDependencies:
+```
+npm install grunt --save-dev
+```
+The same can be done for gruntplugins and other node modules. As seen in the following example installing the JSHint task module:
+```
+npm install grunt-contrib-jshint --save-dev
+```
 http://gruntjs.com/getting-started
