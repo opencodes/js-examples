@@ -41,6 +41,8 @@ $(document).ready(function() {
             .column(col)
             .search( searchText)
             .draw();
+        }else{
+            table.fnFilterClear();
         }
     } );
 });
