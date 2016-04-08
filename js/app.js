@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var table = $('#example').dataTable( {
+    var table = $('#example').DataTable( {
         "ajax": "js/objects.txt",
         "columns": [
             { "data": "name" },
