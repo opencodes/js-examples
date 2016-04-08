@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    jQuery.fn.DataTableExt.oApi.fnFilterClear  = function ( oSettings )
+    jQuery.fn.dataTableExt.oApi.fnFilterClear  = function ( oSettings )
 {
 	var i, iLen;
 
