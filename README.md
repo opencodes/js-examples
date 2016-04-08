@@ -48,7 +48,7 @@ Note that installing grunt-cli does not install the Grunt task runner!
 A typical setup will involve adding two files to your project: package.json and the Gruntfile.
 The package.json file we already created before.
 
-****Gruntfile:**** This file is named Gruntfile.js or Gruntfile.coffee and is used to configure or define tasks and load Grunt plugins. 
+***Gruntfile:*** This file is named Gruntfile.js or Gruntfile.coffee and is used to configure or define tasks and load Grunt plugins. 
 
 ###### Installing Grunt and gruntplugins
 
