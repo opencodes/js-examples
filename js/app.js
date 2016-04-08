@@ -42,7 +42,7 @@ $(document).ready(function() {
             .search( searchText)
             .draw();
         }else{
-            table.fnFilterClear();
+            table.state.clear();
         }
     } );
 });
