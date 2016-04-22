@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     
 
     
@@ -12,6 +13,7 @@ $(document).ready(function() {
     }
 
     var table = $('#example').wfDataTable( {
+
         "ajax": "js/objects.txt",
         "columns": [
             { "data": "name" },
@@ -53,7 +55,8 @@ $(document).ready(function() {
             .search( searchText)
             .draw();
         }else{
-            table.search('').columns().search('').draw();
+
+            table.fnFilterClear();
         }
     });
 
