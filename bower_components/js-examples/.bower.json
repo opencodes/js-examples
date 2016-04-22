@@ -1,0 +1,14 @@
+{
+  "name": "js-examples",
+  "homepage": "https://github.com/opencodes/js-examples",
+  "_release": "09c526a607",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "09c526a6077fd0166e3f682c997ab5b85597a0d4"
+  },
+  "_source": "git@github.com:opencodes/js-examples.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:opencodes/js-examples.git",
+  "_direct": true
+}

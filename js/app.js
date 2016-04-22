@@ -1,5 +1,17 @@
 $(document).ready(function() {
-    var table = $('#example').DataTable( {
+    
+
+    
+
+    $.fn.wfDataTable = function (options) {       
+
+        $.extend( true, $.fn.dataTable.defaults, options);
+ 
+        // Greenify the collection based on the settings variable.
+        return $(this).DataTable({"sDom": options.sDom});
+    }
+
+    var table = $('#example').wfDataTable( {
         "ajax": "js/objects.txt",
         "columns": [
             { "data": "name" },
@@ -8,8 +20,7 @@ $(document).ready(function() {
             { "data": "extn" },
             { "data": "start_date" },
             { "data": "salary" },
-            { "data": "extn" }
-            
+            { "data": "extn" }            
         ],
         "sDom": '<"top">rt<"bottom"p><"clear">',
         "columnDefs": [
@@ -32,7 +43,7 @@ $(document).ready(function() {
         ]
     } );
 
-    $( '#searchby').on( 'keyup change', function () {
+    $('#searchby').on( 'keyup change', function () {
         var col = $('#selectby').val().trim();
         var searchText = $('#searchby').val().trim();
         console.log(searchText, col)
@@ -41,6 +52,9 @@ $(document).ready(function() {
             .column(col)
             .search( searchText)
             .draw();
+        }else{
+            table.search('').columns().search('').draw();
         }
-    } );
+    });
+
 });

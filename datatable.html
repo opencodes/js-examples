@@ -60,6 +60,60 @@
 
           
 
+          <h2 class="sub-header">Data Table</h2>
+          <div class="table-responsive">
+            <div class="row">
+              <div class="col-md-6"></div>
+              <div class="col-md-6 text-right">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <select class="form-control" id="selectby">
+                      <option value="0">Name</option>
+                      <option value="1">Position</option>
+                      <option value="2">Office</option>
+                      <option value="3">Extn</option>
+                      <option value="4">Start date</option>
+                      <option value="5">Salary</option>
+                    </select>
+                   
+                  </div>
+                  <div class="input-group">
+                  <input type="text" id="searchby" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                  </span>
+                </div><!-- /input-group -->
+                </form>
+                
+                
+              </div>
+            </div>
+            <table id="example" class="table" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Extn.</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Extn.</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                        <th>Action</th>
+                    </tr>
+                </tfoot>
+            </table>
+
+          </div>
         </div>
       </div>
     </div>
@@ -70,6 +124,9 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
   </body>
 </html>
