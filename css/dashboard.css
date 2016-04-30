@@ -103,3 +103,25 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+table.dataTable thead .sorting_asc::after, table.dataTable thead .sorting::after ,table.dataTable thead .sorting_desc::after{
+  position: static;
+  right: 6px;
+  text-align: center;
+  display: inline-block;
+  font-family: Ionicons;
+  margin-left: 10px;
+  width: 1em;
+  font-size: 10px;
+}
+table.dataTable thead .sorting_asc::after {
+  content: "\f104";
+}
+table.dataTable thead .sorting::after {
+  content: "\f107\f10a"; 
+  letter-spacing: 2px;  
+  opacity: 0.2;  
+  transform: rotate(90deg);  
+}
+table.dataTable thead .sorting_desc::after {
+  content: "\f10d";
+}
