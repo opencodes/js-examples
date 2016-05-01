@@ -120,7 +120,12 @@ table.dataTable thead .sorting::after {
   content: "\f107\f10a"; 
   letter-spacing: 2px;  
   opacity: 0.2;  
+  width: 2em;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
   transform: rotate(90deg);  
+
 }
 table.dataTable thead .sorting_desc::after {
   content: "\f10d";
